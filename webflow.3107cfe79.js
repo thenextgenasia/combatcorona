@@ -456,11 +456,7 @@
                 r = i.env("editor");
             n ? r && t.remove() : (t.length && t.remove(), r || a.append(e))
         }
-        return n.ready = function() {
-            var n, i, a, s = o.attr("data-wf-status"),
-                h = o.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(h) && u.hostname !== h && (s = !0), s && !c &&
-        }, n
+        return n.ready = function() {}, n
     })
 }, function(t, e, n) {
     "use strict";
