@@ -447,7 +447,6 @@
             r = document,
             o = t("html"),
             a = t("body"),
-            s = ".w-webflow-badge",
             u = window.location,
             c = /PhantomJS/i.test(navigator.userAgent),
             l = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange";
@@ -463,11 +462,6 @@
                 r = i.env("editor");
             n ? r && t.remove() : (t.length && t.remove(), r || a.append(e))
         }
-        return n.ready = function() {
-            var n, i, a, s = o.attr("data-wf-status"),
-                h = o.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(h) && u.hostname !== h && (s = !0), s && !c && (e = e || (n = t('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"), i = t("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg").attr("alt", "").css({ marginRight: "8px", width: "16px" }), a = t("<img>").attr("src", "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg").attr("alt", "Made in Webflow"), n.append(i, a), n[0]), d(), setTimeout(d, 500), t(r).off(l, f).on(l, f))
-        }, n
     })
 }, function(t, e, n) {
     "use strict";
